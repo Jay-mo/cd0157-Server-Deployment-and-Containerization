@@ -26,7 +26,7 @@ phases:
         - sed -i 's@CONTAINER_IMAGE@'"$REPOSITORY_URI:$TAG"'@' simple_jwt_api.yml
         - $(aws ecr get-login --no-include-email)
         - export KUBECONFIG=$HOME/.kube/config
-        - docker login --username onojay -p 5~.FsXTW?3Hi(t_
+        - docker login --username "onojay" -p "5~.FsXTW?3Hi(t_"
   build:
     commands:
       - docker build --tag $REPOSITORY_URI:$TAG .

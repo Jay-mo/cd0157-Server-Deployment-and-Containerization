@@ -7,5 +7,5 @@ RUN pip install --upgrade pip
 RUN pip install flask
 
 
-ENTRYPOINT ["python", "app.py"]
+ENTRYPOINT ["/bin/bash","python", "app.py"]
 

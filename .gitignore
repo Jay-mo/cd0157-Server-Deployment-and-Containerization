@@ -29,3 +29,10 @@ htmlcov/
 .direnv
 
 .github/**
+
+
+.env_file
+
+trust.json
+venv/
+.token
